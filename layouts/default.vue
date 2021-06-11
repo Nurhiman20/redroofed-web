@@ -5,7 +5,14 @@
       app
       color="white"
     >
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title>
+        <v-img
+          max-height="60"
+          max-width="110"
+          contain
+          :src="require('@/assets/img/logo.png')"
+        ></v-img>
+      </v-toolbar-title>
       <v-spacer />
       <v-btn text color="primary">
         Beranda
