@@ -37,7 +37,11 @@
       :absolute="true"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <div class="mx-auto">        
+        <span>Copyright</span>
+        <span>&copy; {{ new Date().getFullYear() }}</span>
+        <span class="ml-3">REDROOFED - House of English</span>
+      </div>
     </v-footer>
   </v-app>
 </template>
