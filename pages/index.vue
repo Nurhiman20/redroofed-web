@@ -117,5 +117,15 @@
 
 <script>
 export default {
+  head: {
+    title: 'Beranda',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, laboriosam accusantium dolores culpa reiciendis.'
+      }
+    ],
+  }
 }
 </script>
