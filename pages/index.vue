@@ -22,59 +22,30 @@
 
     <section id="penawaran" class="py-12 mt-2">
       <v-row justify="center" align="center">
-        <v-col cols="12" md="6" lg="6" xl="6" class="mb-n4">
+        <v-col cols="12" md="5" lg="5" xl="5" class="mb-n4">
           <div>
-            <h1 class="font-weight-medium">Penawaran Kami</h1>
-            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, laboriosam accusantium dolores culpa reiciendis.</p>
+            <h1 class="font-weight-medium text-center">Penawaran Kami</h1>
+            <p class="mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, laboriosam accusantium dolores culpa reiciendis.</p>
           </div>
         </v-col>
-        <v-col cols="12" md="6" lg="6" xl="6" class="mb-n4"></v-col>
-        <v-col cols="12" md="4" lg="4" xl="4" class="px-12">
+      </v-row>
+      <v-row justify="center" align="center">
+        <v-col cols="12" md="3" lg="3" xl="3" class="px-12 px-md-4 px-lg-4 px-lg-4" v-for="(penawaran, index) in listPenawaran" :key="index">
           <v-card min-height="250" class="d-flex flex-column justify-center">
             <div class="pa-4">
               <v-img
                 contain
                 max-height="100"
-                :src="require('@/assets/img/icon1.png')"
+                :src="penawaran.image"
               ></v-img>
             </div>
-            <v-card-title class="mt-n3 mx-auto">Duis aute irure dolor</v-card-title>
+            <v-card-title class="mt-n3 mx-auto">{{ penawaran.title }}</v-card-title>
             <v-card-text class="mt-n3 mx-auto text-center">
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+              {{ penawaran.description }}
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" md="4" lg="4" xl="4" class="px-12">
-          <v-card min-height="250" class="d-flex flex-column justify-center">
-            <div class="pa-4">
-              <v-img
-                contain
-                max-height="100"
-                :src="require('@/assets/img/icon2.png')"
-              ></v-img>
-            </div>
-            <v-card-title class="mt-n3 mx-auto">Duis aute irure dolor</v-card-title>
-            <v-card-text class="mt-n3 mx-auto text-center">
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="4" lg="4" xl="4" class="px-12">
-          <v-card min-height="250" class="d-flex flex-column justify-center">
-            <div class="pa-4">
-              <v-img
-                contain
-                max-height="100"
-                :src="require('@/assets/img/icon3.png')"
-              ></v-img>
-            </div>
-            <v-card-title class="mt-n3 mx-auto">Duis aute irure dolor</v-card-title>
-            <v-card-text class="mt-n3 mx-auto text-center">
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>  
+      </v-row>
     </section>
 
     <section id="tentang" class="py-12 mt-2">
@@ -126,6 +97,27 @@ export default {
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, laboriosam accusantium dolores culpa reiciendis.'
       }
     ],
-  }
+  },
+  data() {
+    return {
+      listPenawaran: [
+        {
+          title: 'Duis aute irure dolor',
+          description: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.',
+          image: require('@/assets/img/icon1.png')
+        },
+        {
+          title: 'Duis aute irure dolor',
+          description: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.',
+          image: require('@/assets/img/icon2.png')
+        },
+        {
+          title: 'Duis aute irure dolor',
+          description: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.',
+          image: require('@/assets/img/icon3.png')
+        }
+      ]
+    }
+  },
 }
 </script>
