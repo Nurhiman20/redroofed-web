@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="py-12">
+    <section id="hero" class="py-12 mt-2">
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="6" xl="6">
           <div>
@@ -18,9 +18,9 @@
           </div>
         </v-col>
       </v-row>
-    </div>
+    </section>
 
-    <div class="py-12">
+    <section id="penawaran" class="py-12 mt-2">
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="6" xl="6" class="mb-n4">
           <div>
@@ -29,7 +29,7 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" lg="6" xl="6" class="mb-n4"></v-col>
-        <v-col cols="12" md="4" lg="4" xl="4">
+        <v-col cols="12" md="4" lg="4" xl="4" class="px-12">
           <v-card min-height="250" class="d-flex flex-column justify-center">
             <div class="pa-4">
               <v-img
@@ -44,7 +44,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" md="4" lg="4" xl="4">
+        <v-col cols="12" md="4" lg="4" xl="4" class="px-12">
           <v-card min-height="250" class="d-flex flex-column justify-center">
             <div class="pa-4">
               <v-img
@@ -59,7 +59,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" md="4" lg="4" xl="4">
+        <v-col cols="12" md="4" lg="4" xl="4" class="px-12">
           <v-card min-height="250" class="d-flex flex-column justify-center">
             <div class="pa-4">
               <v-img
@@ -75,9 +75,9 @@
           </v-card>
         </v-col>
       </v-row>  
-    </div>
+    </section>
 
-    <div class="py-12">
+    <section id="tentang" class="py-12 mt-2">
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="6" xl="6">
           <div>
@@ -95,9 +95,9 @@
           </div>
         </v-col>        
       </v-row>
-    </div>
+    </section>
 
-    <div class="py-12 mb-12">
+    <section id="kontak" class="py-12 mt-2 mb-12">
       <v-row justify="center" align="center">
         <v-col cols="12" md="4" lg="4" xl="4" class="d-flex flex-column">
           <h2 class="text-center font-weight-medium">Spesial untuk kamu</h2>
@@ -111,7 +111,7 @@
           </div>
         </v-col>        
       </v-row>
-    </div>
+    </section>
   </div>
 </template>
 
