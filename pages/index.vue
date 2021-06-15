@@ -48,6 +48,48 @@
       </v-row>
     </section>
 
+    <section id="galeri" class="py-12 mt-2">
+      <v-row justify="center" align="center">
+        <v-col cols="12">
+          <div>
+            <h1 class="font-weight-medium text-center">Galeri Kelas</h1>
+          </div>
+        </v-col>
+        <v-col cols="12" class="hidden-md-and-up">
+          <v-carousel height="300" hide-delimiters hide-delimiter-background>
+            <v-carousel-item
+              v-for="(item,i) in imageGallery"
+              :key="i"
+              :src="item"
+              reverse-transition="fade-transition"
+              transition="fade-transition"
+            ></v-carousel-item>
+          </v-carousel>
+        </v-col>
+        <v-col cols="12" md="4" lg="4" xl="4" v-for="n in imageGallery" :key="n" class="hidden-sm-and-down">          
+          <v-img
+            max-height="300"
+            :aspect-ratio="3/4"
+            :src="n"
+            class="grey"
+          >
+            <template v-slot:placeholder>
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-col>
+      </v-row>
+    </section>
+
     <section id="tentang" class="py-12 mt-2">
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="6" xl="6">
@@ -116,7 +158,8 @@ export default {
           description: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.',
           image: require('@/assets/img/icon3.png')
         }
-      ]
+      ],
+      imageGallery: ['https://picsum.photos/400/300', 'https://picsum.photos/400/301', 'https://picsum.photos/400/302', 'https://picsum.photos/400/303', 'https://picsum.photos/400/304', 'https://picsum.photos/400/305', 'https://picsum.photos/400/306', 'https://picsum.photos/400/307', 'https://picsum.photos/400/308']
     }
   },
 }
