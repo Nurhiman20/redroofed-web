@@ -48,13 +48,45 @@
       </v-row>
     </section>
 
+    <section id="testimoni" class="py-12">
+      <v-row justify="center" align="center">
+        <v-col cols="12">
+          <div>
+            <h1 class="font-weight-medium text-center">Testimoni</h1>
+          </div>
+        </v-col>
+        <v-col cols="12" md="4" lg="4" xl="4" class="d-flex flex-column">
+          <v-avatar size="120" class="mx-auto">
+            <img
+              src="https://cdn.vuetifyjs.com/images/john.jpg"
+              alt="Photo"
+            >
+          </v-avatar>
+          <h3 class="font-weight-bold text-center mt-3">Ali Baba</h3>
+          <p class="text-center grey--text">Siswa Kelas 11</p>
+          <p class="text-center font-italic">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, reprehenderit nesciunt odit quo dolorum cupiditate accusantium obcaecati eligendi laboriosam dolores?"</p>
+        </v-col>
+        <v-col cols="12" md="4" lg="4" xl="4" class="d-flex flex-column">
+          <v-avatar size="120" class="mx-auto">
+            <img
+              src="https://cdn.vuetifyjs.com/images/john.jpg"
+              alt="Photo"
+            >
+          </v-avatar>
+          <h3 class="font-weight-bold text-center mt-3">Ali Baba</h3>
+          <p class="text-center grey--text">Siswa Kelas 11</p>
+          <p class="text-center font-italic">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, reprehenderit nesciunt odit quo dolorum cupiditate accusantium obcaecati eligendi laboriosam dolores?"</p>
+        </v-col>
+      </v-row>
+    </section>
+
     <section id="galeri" class="py-12 mt-2">
       <v-row justify="center" align="center">
         <v-col cols="12">
           <div>
             <h1 class="font-weight-medium text-center">Galeri Kelas</h1>
           </div>
-        </v-col>
+        </v-col>        
         <v-col cols="12" class="hidden-md-and-up">
           <v-carousel height="300" hide-delimiters hide-delimiter-background>
             <v-carousel-item
