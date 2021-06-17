@@ -159,18 +159,22 @@
     </section>
 
     <section id="address" class="py-12">
-      <v-img
-        contain
-        max-height="100"
-        :src="require('@/assets/img/logo.png')"
-      ></v-img>
-      <p class="text-center mt-2">Jl. Villa Bogor Blok G. 1 No.17, RT.05/RW.12, Ciparigi, <br>Kec. Bogor Utara, Kota Bogor, Jawa Barat 16710</p>
-      <div class="text-center">
-        <v-btn color="primary" outlined @click="openMap">
-          Lihat di Google Maps
-        </v-btn>
-      </div>      
-    </section>
+      <v-row justify="center" align="center">
+        <v-col cols="12" md="5" lg="5" xl="5">
+          <v-img
+            contain
+            max-height="100"
+            :src="require('@/assets/img/logo.png')"
+          ></v-img>
+          <p class="text-center mt-2">Jl. Villa Bogor Blok G. 1 No.17, RT.05/RW.12, Ciparigi, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16710</p>
+          <div class="text-center">
+            <v-btn color="primary" small outlined @click="openMap">
+              Lihat di Google Maps
+            </v-btn>
+          </div>    
+        </v-col>
+      </v-row> 
+    </section>   
   </div>
 </template>
 
