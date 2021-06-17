@@ -4,9 +4,9 @@
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" lg="6" xl="6">
           <div>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. In non, explicabo voluptate.</h1>
-            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, laboriosam accusantium dolores culpa reiciendis.</p>
-            <v-btn color="primary">Hubungi Kami</v-btn>
+            <h1>Kembangkan kemampuan bahasa Inggrismu bersama Red-roofed House</h1>
+            <p class="mt-2">Raih kemampuan maksimalmu dalam segala aspek bahasa Inggris dari berbagai level usia.</p>
+            <v-btn color="primary">Saya ingin jago Bahasa Inggris</v-btn>
           </div>
         </v-col>
         <v-col cols="12" md="6" lg="6" xl="6">
@@ -181,12 +181,12 @@
 <script>
 export default {
   head: {
-    title: 'Beranda',
+    title: 'Belajar Bareng di House of English',
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, laboriosam accusantium dolores culpa reiciendis.'
+        content: 'Kembangkan kemampuan bahasa Inggrismu bersama Red-roofed House'
       }
     ],
   },
