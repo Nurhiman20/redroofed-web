@@ -157,6 +157,20 @@
         </v-col>        
       </v-row>
     </section>
+
+    <section id="address" class="py-12">
+      <v-img
+        contain
+        max-height="100"
+        :src="require('@/assets/img/logo.png')"
+      ></v-img>
+      <p class="text-center mt-2">Jl. Villa Bogor Blok G. 1 No.17, RT.05/RW.12, Ciparigi, <br>Kec. Bogor Utara, Kota Bogor, Jawa Barat 16710</p>
+      <div class="text-center">
+        <v-btn color="primary" outlined @click="openMap">
+          Lihat di Google Maps
+        </v-btn>
+      </div>      
+    </section>
   </div>
 </template>
 
@@ -192,6 +206,11 @@ export default {
         }
       ],
       imageGallery: ['https://picsum.photos/400/300', 'https://picsum.photos/400/301', 'https://picsum.photos/400/302', 'https://picsum.photos/400/303', 'https://picsum.photos/400/304', 'https://picsum.photos/400/305', 'https://picsum.photos/400/306', 'https://picsum.photos/400/307', 'https://picsum.photos/400/308']
+    }
+  },
+  methods: {
+    openMap() {
+      window.open('https://maps.app.goo.gl/CAv7m76r7CUT9Pnz8', '_blank').focus();
     }
   },
 }
